@@ -1,17 +1,34 @@
 [project]
 name = "meteocli"
 version = "0.1.0"
-description = ""
+description = "CLI qui affiche la météo d'une ville via l'API Open-Meteo"
 authors = [
     {name = "William  TRILLO",email = "william.trillo@icloud.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
+keywords = ["cli", "weather", "open-meteo"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
 ]
+
+[project.urls]
+Repository = "https://github.com/Willibus/meteocli"
+
+[project.scripts]
+meteocli = "meteocli.cli:main"
+
 
 [tool.poetry]
 packages = [{include = "meteocli", from = "src"}]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
