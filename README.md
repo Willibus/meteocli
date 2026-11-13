@@ -32,7 +32,7 @@ poetry run ruff check .
 ```bash
 poetry build        # génère dist/*.whl et dist/*.tar.gz
 ```
-Installer la wheel produite : `pip install dist/meteocli-<version>-py3-none-any.whl`
+Installer la wheel produite : `pip install dist/meteocli-0.2.0-py3-none-any.whl`
 
 ## Usage de l'outil de build (Poetry)
 | Tâche | Commande |
