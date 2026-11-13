@@ -24,6 +24,10 @@ meteocli = "meteocli.cli:main"
 [tool.poetry]
 packages = [{include = "meteocli", from = "src"}]
 
+[tool.poetry.dependencies]
+requests = "^2.34.2"
+click = "^8.5.1"
+rich = "^15.0.0"
 [tool.ruff]
 line-length = 100
 
