@@ -1,6 +1,6 @@
 [project]
 name = "meteocli"
-version = "0.1.0"
+version = "0.2.0"
 description = "CLI qui affiche la météo d'une ville via l'API Open-Meteo"
 authors = [
     {name = "William  TRILLO",email = "william.trillo@icloud.com"}
